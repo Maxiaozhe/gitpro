@@ -1,5 +1,5 @@
 ﻿# git command list
-#基本操作
+# 基本操作
 git init
 git add *
 git status
