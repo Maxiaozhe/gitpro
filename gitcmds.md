@@ -32,5 +32,3 @@ git push
 git branch branch_name #在本地创建分支
 git checkout branch_name #切换到分支
 git log --oneline --decorate --graph --all #查看分叉历史
-
-
