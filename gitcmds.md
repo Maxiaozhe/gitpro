@@ -28,16 +28,19 @@ git log --pretty=format:"%h - %an, %ad : %s" #指定显示格式
 ```
 
 ## 提交
-git commit -m 'add comments message'
-
-git fetch 
-
+git commit -m "add comments message"    #添加注释
+git fetch
 git push
+git push origin master                  #提交到远程服务器
+
+## 远程查看
+git remote show origin                  #查看远程仓库信息
+
+# 远程仓库的移除
+git remove name                         #移除远程仓库
 
 ## 创建分支
 git branch branch_name #在本地创建分支
-
 git checkout branch_name #切换到分支
-
 git log --oneline --decorate --graph --all #查看分叉历史
 
