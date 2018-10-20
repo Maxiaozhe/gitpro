@@ -6,6 +6,7 @@ git status
 git status -s
 git diff
 git diff --cached
+
 ## 查看·
 git log
 git log -p -2  #显示最近2次提交
