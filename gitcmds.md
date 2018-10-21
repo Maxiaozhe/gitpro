@@ -44,3 +44,10 @@ git branch branch_name #在本地创建分支
 git checkout branch_name #切换到分支
 git log --oneline --decorate --graph --all #查看分叉历史
 
+## 合并分支
+git commit -m "add comment message" 
+git push branch_name    #提交分支
+git checkout master     #且换到主分支
+git merge branch_name   #合并分支
+
+
