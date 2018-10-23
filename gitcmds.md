@@ -54,6 +54,15 @@ git remote show origin                  #查看远程仓库信息
 # 远程仓库的移除
 git remove name                         #移除远程仓库
 
+# 从服务器中删除文件
+git rm -r -n --cached [file path]       #确认待删除文件列表 
+```
+-n         #只打印文件名，并不删除
+--cached   #只从仓库中删除，保留本地文件
+```
+git rm -r --cached [file path]       #标记删除文件
+git commit -m "delete files"         #提交删除文件
+git push 
 
 ## 创建分支
 git branch branch_name #在本地创建分支
