@@ -61,7 +61,9 @@ git rm -r -n --cached [file path]       #确认待删除文件列表
 --cached   #只从仓库中删除，保留本地文件
 ```
 git rm -r --cached [file path]       #标记删除文件
+
 git commit -m "delete files"         #提交删除文件
+
 git push 
 
 ## 创建分支
