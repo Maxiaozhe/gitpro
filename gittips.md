@@ -11,7 +11,7 @@ git config --global i18n.logoutputencoding utf-8
 #在Window中添加环境变量 
 LESSCHARSET=utf-8
 
-```
+
 ```mermaid
 graph TD;
     A-->B;
@@ -19,6 +19,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
 ```mermaid
 sequenceDiagram
     participant Alice
