@@ -19,7 +19,6 @@ graph TD;
     B-->D;
     C-->D;
 ```
-
 ```mermaid
 sequenceDiagram
     participant Alice
