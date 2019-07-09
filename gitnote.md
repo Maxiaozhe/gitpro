@@ -32,6 +32,43 @@ git commit -a -m "add commont"       #跳过追加到暂存区直接commit
 ```
 
 6. 移除
+```bash
+git rm                  #未放入缓存区时
+git rm -f               #已放入缓存区时
+git rm --cached *.a     #仅从暂存区移除，文件保留
 ```
-git rm
+
+7. 重命名
+```bash
+git mv before.txt after.txt     #修改放入暂存区的文件名
 ```
+8. 查看提交历史
+```bash
+git log                 #查看提交历史
+git -p -2               #查看最近的2次提交
+                        #-p 查看两次提交的差异
+git log --stat          #显示log的简短信息
+git log --pretty=online #显示为1行
+git log --pretty=format:"%h - %an, %ar: %s"         #按照格式化输出
+git log --pretty=format:"%h - %an, %ar: %s" --graph #显示树形结构
+git log --since=2.weeks #两周内的便跟
+git log -$function_name
+```
+Format格式
+选项  |  说明
+-----|------------------------------------------
+%H   | 完整哈希字串
+%h   | 简短哈希字串
+%T   | 树对象的完整嘻哈
+%t   | 树对象的简短嘻哈
+%P   | 父对象的完整嘻哈
+%p   | 父对象的简短嘻哈
+%an  | 作者名字
+%ae  | 作者email
+%ad  | 作者修改日期
+%ar  | 作者修定日期（按多久前的计算）
+%cn  | 提交者名字
+%ce  | 提交者email
+%cd  | 提交日期
+%cr  | 提交日期（按多久前的计算）
+%s   | 提交说明
