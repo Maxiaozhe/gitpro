@@ -28,5 +28,10 @@ git commit                  #启动默认编辑器
 git commit -m "commont"     #直接写注释
 #设置默认编辑器
 git config --global core.editor code #将缺省编辑器设为vscode
-git commit -a -m "add commont"
+git commit -a -m "add commont"       #跳过追加到暂存区直接commit
+```
+
+6. 移除
+```
+git rm
 ```
