@@ -104,7 +104,7 @@ git reset –soft HEAD~3
 ```
 ### 将本地的状态回退到和远程的一样  
 ```
-git reset –hard origin/master  
+git reset --hard origin/master 
 ```
 ### 回退到某个版本  
 ```
